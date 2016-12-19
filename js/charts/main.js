@@ -124,6 +124,14 @@ function renderChart(data, chartData) {
       hightLightColor(d.name);
       renderTwoChart(data, d.name);
       highlightList(d.name);
+      var replier1 = mostActiveAddress(d.name);
+      var replier2 = leastActiveAddress(d.name);
+      var p1 = document.getElementById("mostActive");
+      var p2 = document.getElementById("leastActive");
+      var h3 = document.getElementById("userName");
+      p1.innerHTML = replier1;
+      p2.innerHTML = replier2;
+      h3.innerHTML = d.name;
     });
 
 function highlightList(name){
@@ -177,4 +185,35 @@ function highlight(name) {
 function unHighlight() {
   dotGroup.selectAll("circle")
     .style("stroke", undefined)
+}
+
+
+function mostActiveAddress(user) {
+  var max = 0;
+  var maxReplier = "";
+
+  Object.keys(result[user]["responseObj"]).forEach(function (key) {
+    var replyTime = result[user]["responseObj"][key];
+    if (replyTime > max) {
+      max = replyTime;
+      maxReplier = key;
+    }
+  });
+
+  return maxReplier;
+}
+
+function leastActiveAddress(user) {
+  var min = 999999999999999;
+  var minReplier = "";
+
+  Object.keys(result[user]["responseObj"]).forEach(function (key) {
+    var replyTime = result[user]["responseObj"][key];
+    if (replyTime < min) {
+      min = replyTime;
+      minReplier = key;
+    }
+  });
+
+  return minReplier;
 }
