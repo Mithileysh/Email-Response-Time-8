@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+    
+    <div class="container-fluid">
+        <div class="col-md-12"><h1>Email Response Time</h1></div>
+        <div class="col-md-9">
+            
+            <div class="col-md-12" style="border-bottom: 2px solid">
+                <div id="mainView"></div>
+                <div id = "tooltip">tooltip</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pie-container">
+                    <div id="tooltip2">
+                        <p><strong>Percentage:</strong>
+                        </p>
+                        <p><span id="value">100</span>%</p>
+                    </div>
+                    <div class="pie-center">
+                        <div id = "pieChart"></div>
+                        <div >
+                            <label class="text-center">Interval: </label>
+                            <div style="display: inline-block; margin-top: 5px">
+                                <input type="text" onkeypress='onChangeInterval(event)'
+                                id="quickReplyTime" placeholder="12 " class="form-control" >
+                                <select id="selectInterval" class="dropdown" onchange="handleClick()">
+                                    <option value="minute">minute</option>
+                                    <option value="hour" selected>hour</option>
+                                    <option value="day">day</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 barContainer row-md-12 center-block" style="height: 300px;">
+                    <div class="col-md-12" id="barChart">
+                        <h2 class="text-center">User Not Selected</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-3">
+            <div id="activeReplier" class="col-sm-12">
+                <h4 id="userName">User</h4>
+                <label class="label label-info userActive">Most Active:</label><p id="mostActive">User Not Selected</p>
+                <br>
+                <label class="label label-warning userActive">Least Active:</label><p id="leastActive">User Not Selected</p>
+            </div> 
+            <ul class="list-group col-sm-12" id = "userList">
+              
+            </ul>
+        </div>
+    </div>
+</body>
+<script src ="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src ="./js/charts/pie.js" charset="utf-8"></script>
+<script src ="./js/charts/bar.js" charset="utf-8"></script>
+<script src ="./js/charts/main.js" charset="utf-8"></script>
+</html>
