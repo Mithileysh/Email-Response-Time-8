@@ -5,7 +5,7 @@ Email response time is a anaylze of relationship between people response email t
 
 ## Data set
 raw data: https://tandoninfovisfall16.slack.com/files/anshul/F31BYB29K/updated_data_20161111.csv <br/>
-final data: https://github.com/joshuawong/d3
+final data: https://raw.githubusercontent.com/joshuawong/d3/master/dump5.json
 
 ## Project structure
 1.index.html: project display page.<br/>
