@@ -1,5 +1,7 @@
 # Email-Response-Time_8
-
+![demo picture](https://github.com/NYU-CS6313-Fall16/Email-Response-Time-8/blob/master/demo.png)
+## Authors:
+Junkai Qiu, Jiahao Huang, Jun Li, Gulin Fu
 ## Description
 Email response time is a anaylze of relationship between people response email time and recevie email time. This tool contains four parts: a scatter plot displays relation between user response time to others and others response time to user, a user list for select user and display most active and least active repliers for certian user, a pie chart display distribution of qucik and slow repliers, and a bar chart display all the repliers and their resonse time  of a certain user.
 
