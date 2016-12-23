@@ -21,6 +21,7 @@ final data: https://raw.githubusercontent.com/joshuawong/d3/master/dump5.json
 https://vimeo.com/196799748
 
 ## Final report
+https://github.com/NYU-CS6313-Fall16/Email-Response-Time-8/blob/master/Email-Response-Time-8-Report.pdf
 
 ## Live demo
 https://junkaiqiu.github.io/info_visual/
