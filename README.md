@@ -8,12 +8,13 @@ raw data: https://tandoninfovisfall16.slack.com/files/anshul/F31BYB29K/updated_d
 used data: https://github.com/joshuawong/d3
 
 ## demo structure
-index.html: project display page.
-style folder: all css code store in style.css inside this folder.
-js/charts: there are 3 js files inside this folder. 
-            1. main.js:  for the main view.
-            2. pie.js: for the pie chart and the user list.
-            3. bar chart: for the bar chart.
+index.html: project display page.<br/>
+style folder: all css code store in style.css inside this folder.<br/>
+js/charts: there are 3 js files inside this folder.
+*         main.js:  for the main view.
+*          pie.js: for the pie chart and the user list.
+*          bar chart: for the bar chart.
+
 ## Video
 https://vimeo.com/196799748
 
