@@ -7,10 +7,10 @@ Email response time is a anaylze of relationship between people response email t
 raw data: https://tandoninfovisfall16.slack.com/files/anshul/F31BYB29K/updated_data_20161111.csv
 used data: https://github.com/joshuawong/d3
 
-## demo structure
-index.html: project display page.<br/>
-style folder: all css code store in style.css inside this folder.<br/>
-js/charts: there are 3 js files inside this folder.
+## Project structure
+1.index.html: project display page.<br/>
+2.style folder: all css code store in style.css inside this folder.<br/>
+3.js/charts: there are 3 js files inside this folder.
 *         main.js:  for the main view.
 *          pie.js: for the pie chart and the user list.
 *          bar chart: for the bar chart.
