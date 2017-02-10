@@ -1,7 +1,7 @@
 var defaultUser = "all";
 var result = {};
 
-d3.json("https://raw.githubusercontent.com/joshuawong/d3/master/dump5.json", function (data) {
+d3.json("https://raw.githubusercontent.com/joshuawong/Email-Response-Time-8/master/data/data.json", function (data) {
   result = data;
   Object.keys(result).forEach(function (key) {
     var o = result[key];
